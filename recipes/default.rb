@@ -2,7 +2,7 @@ require 'chef/provisioning/azurerm'
 with_driver 'AzureRM:90cb812a-eb9b-4a1e-8fd7-75e6d367f760'
 
 azure_resource_group 'nics2-demo22' do
-  location 'West US' # optional, default: 'West US'
+  location 'West Europe' # optional, default: 'West US'
   tags businessUnit: 'NIC' # optional
 end
 

@@ -9,10 +9,10 @@ end
 azure_resource_template 'nic-deployment' do
   resource_group 'nic-demo22'
   template_source 'azure_deploy.json'
-  parameters adminUsername: 'niklasa',
+  parameters adminUsername: 'mfleksnes',
              adminPassword: 'P2ssw0rd',
              windowsOSVersion: '2012-R2-Datacenter',
-             dnsLabelPrefix: 'vniklasnic22'        
+             dnsLabelPrefix: 'vniklasnic22'
   chef_extension client_type: 'ChefClient',
                  version: '1210.12',
                  client_rb: '',
